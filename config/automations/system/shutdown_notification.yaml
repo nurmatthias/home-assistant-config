@@ -9,4 +9,4 @@ trigger:
 action:
   - service: notify.matthias_signal
     data:
-      message: Home Assistant is shutting down... Bye!
+      message: Ich fahre meine Systeme herrunter!
