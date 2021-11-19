@@ -7,6 +7,6 @@ trigger:
   platform: event
   event_type: automation_reloaded
 action:
-  - service: notify.frenck_telegram
+  - service: notify.matthias_signal
     data:
       message: Home Assistant reloaded all automations 🤖

@@ -1,0 +1,14 @@
+---
+# You can't control the entity ID's
+# of notify devices.
+#
+# This is a small workaround to be able to do that.
+# I uses groups to map devices to my consistent format.
+#
+platform: group
+name: matthias_signal
+platform: signal_messenger
+url: "http://192.168.178.10:8080"
+number: !secret signal_jarvis
+recipients:
+  - !secret signal_matthias
