@@ -1,3 +1,6 @@
+# never ever commit the secret.yaml #
+config/secrets.yaml
+
 # Generic ignores
 *.log
 *.log.*
