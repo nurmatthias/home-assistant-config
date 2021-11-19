@@ -1,0 +1,14 @@
+---
+# Light group: Restroom
+#
+# This bundles the restroom ceiling lights into a single light entity
+#
+# https://www.home-assistant.io/integrations/light.group/
+#
+platform: systemmonitor
+resources:
+  - type: disk_use_percent
+  - type: disk_free
+  - type: memory_use_percent
+  - type: processor_use
+  - type: processor_temperature
