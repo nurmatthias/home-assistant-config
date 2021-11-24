@@ -1,0 +1,50 @@
+---
+description: Passt die Temperatur im Bad an
+alias: bad_temperatur
+id: 104463f6-7524-48d9-bbe5-2bb05517e946
+mode: single
+
+trigger:
+  platform: time
+  at: "05:00:00"
+
+action:
+  - conditions:
+      - condition: time
+        after: "23:00:00"
+        before: "05:00:00"
+    sequence:
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.thermostat_bad
+        data:
+          temperature: 18
+      
+  - conditions:
+    - condition: time
+      after: "05:00:00"
+      before: "08:00:00"
+    sequence:
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.thermostat_bad
+        data:
+          temperature: 23
+
+  - conditions:
+    - condition: time
+      after: "18:30:00"
+      before: "21:30:00"
+    sequence:
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.thermostat_bad
+        data:
+          temperature: 23
+
+    default:
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.thermostat_bad
+        data:
+          temperature: 20

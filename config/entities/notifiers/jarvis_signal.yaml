@@ -5,7 +5,6 @@
 # This is a small workaround to be able to do that.
 # I uses groups to map devices to my consistent format.
 #
-platform: group
 name: jarvis_signal
 platform: signal_messenger
 url: "http://192.168.178.10:8080"

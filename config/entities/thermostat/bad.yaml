@@ -1,0 +1,8 @@
+---
+# Thermostat Gruppe: Bad
+#
+platform: group
+name: Bad
+unique_id: 33ed3732-2b30-4558-aba6-49a620485f16
+entities:
+  - climate.thermostat_bad

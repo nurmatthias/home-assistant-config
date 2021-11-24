@@ -8,5 +8,5 @@
 #
 sensor:
   - platform: season
-    name: "Season"
+    name: "Jahreszeit"
     type: astronomical
