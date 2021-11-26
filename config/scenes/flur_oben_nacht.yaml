@@ -1,0 +1,14 @@
+---
+# Scene: Flur oben (Nacht)
+#
+# Warmes Licht, recht dunkel
+#
+name: "Flur oben: Nacht"
+id: "2fb8e8e8-c206-4ea7-8edc-91e21858092b"
+entities:
+  light.licht_flur_oben:
+    color_mode: color_temp
+    brightness: 5
+    color_temp: 450
+    state: 'on'
+icon: mdi:weather-night

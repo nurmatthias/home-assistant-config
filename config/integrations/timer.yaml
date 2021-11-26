@@ -1,0 +1,6 @@
+#
+# Timer für verschiedene Zwecke (Bewegungssensoren etc.)
+#
+timer:
+  timer_flur_oben:
+    duration: '00:01:00'

@@ -1,0 +1,31 @@
+---
+#
+# Steuerung des Lichts, oben im Flur
+#
+alias: steuerung_licht_flur_oben
+description: Bei Bewegung Licht schalten
+id: 104463f6-7524-48d9-bbe5-2dd99548e946
+mode: single
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.bewegungssensor_flur_oben
+#condition:
+#  - condition: state
+#    entity_id: sun.sun
+#    state: 'below_horizon'
+
+action:
+  - choose:
+    - conditions:
+        - condition: state
+          entity_id: binary_sensor.bewegungssensor_flur_oben
+          state: 'off'
+      sequence:
+        - delay: 00:00:01
+        - service: light.turn_off
+          entity_id: light.licht_flur_oben
+
+    default:
+      - service: light.turn_on
+        entity_id: light.licht_flur_oben

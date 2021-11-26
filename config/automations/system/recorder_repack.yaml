@@ -1,11 +1,9 @@
 ---
 #
-# Sunday morning, early morning, repack the recorder database.
-# This keeps the disk usage low and nice by reclaiming space
-# taken by the MySQL InnoDB database.
+# Jeden Sonntag die DB einmal aufräumen
 #
-description: Repack recorder database
 alias: system_recorder_repack
+description: Repack recorder database
 id: 752639e0-9527-45a6-84e8-f54537d40278
 mode: single
 trigger:

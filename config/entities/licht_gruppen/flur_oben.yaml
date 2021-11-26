@@ -1,0 +1,10 @@
+---
+# Lichtgruppe: Flur oben
+#
+# https://www.home-assistant.io/integrations/light.group/
+#
+platform: group
+name: flur_oben
+unique_id: 33ed3732-2b30-4558-aba6-49a6204c6f78
+entities:
+  - light.licht_flur_oben

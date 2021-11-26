@@ -1,6 +1,9 @@
 ---
-description: Passt die Temperatur im Bad an
+#
+# Temperatur im Bad über den Tag steuern
+#
 alias: bad_temperatur
+description: Passt die Temperatur im Bad an
 id: 104463f6-7524-48d9-bbe5-2bb05517e946
 mode: single
 

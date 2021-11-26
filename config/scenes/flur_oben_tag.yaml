@@ -1,0 +1,14 @@
+---
+# Scene: Flur oben (Tag)
+#
+# Normales Licht, hell
+#
+name: "Flur oben: Tag"
+id: "2fb8e8e8-c206-4ea7-8edc-91e21858092c"
+entities:
+  light.licht_flur_oben:
+    color_mode: color_temp
+    brightness: 100
+    color_temp: 350
+    state: 'on'
+icon: mdi:weather-sunny

@@ -1,11 +1,14 @@
 ---
-description: Send notification on Home Assistant start
+#
+# Nachricht verschicken wenn das System neu gestartet wurde
+#
 alias: system_start_notification
+description: Send notification on Home Assistant start
 id: 104463f6-7524-48d9-bbe5-2bb09017e946
 mode: single
 trigger:
-  platform: homeassistant
-  event: start
+  - platform: homeassistant
+    event: start
 action:
   - service: notify.matthias_signal
     data:

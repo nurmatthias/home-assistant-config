@@ -1,6 +1,9 @@
 ---
-description: Send notification on Home Assistant stop
+#
+# Nachricht verschicken wenn das System herrunter gefahren wird
+#
 alias: system_shutdown_notification
+description: Send notification on Home Assistant stop
 id: 761953d0-50cc-4f0b-81ff-3f305223ce38
 mode: single
 trigger:

@@ -1,0 +1,14 @@
+---
+# Anpassungen für die ZHA Integration
+#
+# https://www.home-assistant.io/integrations/zha/
+#
+zha:
+  database_path: /config/zha/zigbee.db
+  enable_quirks: true
+  custom_quirks_path: /config/zha/
+  zigpy_config:
+    ota:
+      ikea_provider: true         # Auto update Trådfri devices
+      ledvance_provider: true     # Auto update LEDVANCE devices
+      otau_directory: /share/ota/  # Utilize .ota files to update everything else
